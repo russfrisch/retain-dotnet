@@ -155,3 +155,4 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 /packages/NewRelicWindowsAzure.2.23.2.0
+/packages

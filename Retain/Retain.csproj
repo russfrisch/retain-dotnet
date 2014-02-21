@@ -41,7 +41,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="NewRelic.Api.Agent">
-      <HintPath>..\packages\NewRelicWindowsAzure.2.23.2.0\lib\NewRelic.Api.Agent.dll</HintPath>
+      <HintPath>..\packages\NewRelic.Azure.WebSites.2.23.2.0\lib\NewRelic.Api.Agent.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -198,6 +198,9 @@
     <Content Include="Content\semantic-ui\fonts\icons.otf" />
     <Content Include="Content\semantic-ui\fonts\icons.ttf" />
     <Content Include="Content\semantic-ui\fonts\icons.woff" />
+    <Content Include="newrelic\extensions\CoreInstrumentation.xml" />
+    <Content Include="newrelic\NewRelic.Agent.Core.dll" />
+    <Content Include="newrelic\NewRelic.Profiler.dll" />
     <Content Include="sass\Site.css">
       <DependentUpon>Site.scss</DependentUpon>
     </Content>
@@ -251,14 +254,9 @@
     <Content Include="sass\_foundation.scss" />
     <Content Include="sass\_foundation.mvc.scss" />
     <Content Include="App_Readme\Foundation_readme.md" />
-    <Content Include="NewRelicServerMonitor_x64_3.0.230.0.msi">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="NewRelicAgent_x64_2.23.2.0.msi">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="newrelic.cmd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="newrelic\newrelic.config" />
+    <Content Include="newrelic\extensions\extension.xsd">
+      <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\foundation\fastclick.js" />
