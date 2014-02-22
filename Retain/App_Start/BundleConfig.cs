@@ -31,7 +31,8 @@ namespace Retain
                         "~/Scripts/jquery.cookie.js",
                         "~/Scripts/foundation/foundation.js",
                         "~/Scripts/foundation/foundation.*",
-                        "~/Content/semantic-ui/javascript/semantic.js"));
+                        "~/Content/semantic-ui/javascript/semantic.js",
+                        "~/Scripts/app.js"));
 
             #region Foundation Bundles
             bundles.Add(Foundation.Scripts());
