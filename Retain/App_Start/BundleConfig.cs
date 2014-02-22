@@ -20,7 +20,7 @@ namespace Retain
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css")
+            bundles.Add(new StyleBundle("~/Content/semantic-ui/css/css")
                 .Include("~/Content/site.css")
                 .Include("~/Content/semantic-ui/css/semantic.css", new CssRewriteUrlTransform())
             );
