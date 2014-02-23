@@ -5,6 +5,6 @@ ASP.NET MVC 5 version of Retain, a Google Keep clone. The goal of this project i
 
 Tools Utilized
 =============
-ASP.NET MVC 5.1
-jQuery
-Semantic UI
+- ASP.NET MVC 5.1
+- jQuery
+- Semantic UI
