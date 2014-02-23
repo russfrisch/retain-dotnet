@@ -3,7 +3,37 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic);
 
-@import "foundation/settings";
+//@import "foundation/settings";
 @import "normalize";
-@import "foundation";
-@import "foundation.mvc";
+//@import "foundation";
+//@import "foundation.mvc";
+
+// Variables
+$base-font-size: 100%;
+$body-bg: #fff;
+$body-font-color: #222;
+$body-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
+$body-font-style: normal;
+
+// Default body styles
+html, body { 
+	font-size: $base-font-size; 
+	height: 100%;
+}
+
+body {
+    background: $body-bg;
+    color: $body-font-color;
+    padding: 0;
+    margin: 0;
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    font-style: $body-font-style;
+    line-height: 1; // Set to $base-line-height to take on browser default of 150%
+    position: relative;
+}
+
+#top-spacer {
+	padding-top: 50px;
+}

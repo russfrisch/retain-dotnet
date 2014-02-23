@@ -20,18 +20,17 @@ namespace Retain
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/semantic-ui/css/css")
+            bundles.Add(new StyleBundle("~/Content/css")
                 .Include("~/Content/site.css")
+            );
+
+            bundles.Add(new StyleBundle("~/Content/semantic-ui/css/semantic")
                 .Include("~/Content/semantic-ui/css/semantic.css", new CssRewriteUrlTransform())
             );
 
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
                         "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery.validate*",
                         "~/Scripts/foundation/fastclick.js",
-                        "~/Scripts/jquery.cookie.js",
-                        "~/Scripts/foundation/foundation.js",
-                        "~/Scripts/foundation/foundation.*",
                         "~/Content/semantic-ui/javascript/semantic.js",
                         "~/Scripts/app.js"));
 
