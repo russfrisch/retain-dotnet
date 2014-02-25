@@ -7,3 +7,5 @@ jQuery ->
     e.preventDefault()
     e.stopPropagation()
     $('.ui.sidebar').sidebar('show')
+  $('.ui.checkbox').checkbox()
+  $('.ui.form').form()

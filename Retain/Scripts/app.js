@@ -9,11 +9,13 @@
         return $('.ui.sidebar').sidebar('hide');
       }
     });
-    return $('.sidebar-toggle').click(function(e) {
+    $('.sidebar-toggle').click(function(e) {
       e.preventDefault();
       e.stopPropagation();
       return $('.ui.sidebar').sidebar('show');
     });
+    $('.ui.checkbox').checkbox();
+    return $('.ui.form').form();
   });
 
 }).call(this);

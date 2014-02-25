@@ -33,6 +33,9 @@ body {
     line-height: 1; // Set to $base-line-height to take on browser default of 150%
     position: relative;
 }
+small {
+	font-size: 75%;
+}
 
 #top-spacer {
 	padding-top: 50px;

@@ -23,6 +23,14 @@
                         @Html.ValidationMessageFor(m => m.UserName)
                     </div>
                     <div class="field">
+                        @Html.LabelFor(m => m.EmailAddress)
+                        <div class="ui left labeled icon input">
+                            @Html.TextBoxFor(m => m.EmailAddress)
+                            <i class="user icon"></i>
+                        </div>
+                        @Html.ValidationMessageFor(m => m.EmailAddress)
+                    </div>
+                    <div class="field">
                         @Html.LabelFor(m => m.Password)
                         <div class="ui left labeled icon input">
                             @Html.PasswordFor(m => m.Password)
@@ -42,7 +50,7 @@
                         <div class="header">We noticed some issues</div>
                         @Html.ValidationSummary(true)
                     </div>
-                    <input type="submit" value="Register" class="ui blue submit button" />
+                    <input type="submit" value="Submit" class="ui blue submit button" />
                 </div>
             }
         </div>
