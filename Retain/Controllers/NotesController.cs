@@ -50,6 +50,8 @@ namespace Retain.Controllers
         public ActionResult Create([Bind(Include="Id,Title,Text")] Note note)
         {
             note.UserId = User.Identity.GetUserId();
+            ModelState["UserId"].Errors.Clear();
+
             if (ModelState.IsValid)
             {
                 db.Notes.Add(note);
@@ -82,6 +84,9 @@ namespace Retain.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include="Id,Title,Text")] Note note)
         {
+            note.UserId = User.Identity.GetUserId();
+            ModelState["UserId"].Errors.Clear();
+
             if (ModelState.IsValid)
             {
                 db.Entry(note).State = EntityState.Modified;

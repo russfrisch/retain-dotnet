@@ -14,6 +14,7 @@
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
             {
                 @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
                 <div class="ui form segment">
                     <div class="field">
                         @Html.LabelFor(m => m.UserName)
@@ -39,7 +40,6 @@
                     </div>
                     <div class="ui error message">
                         <div class="header">We noticed some issues</div>
-                        @Html.ValidationSummary(true)
                     </div>
                     <input type="submit" value="Submit" class="ui blue submit button" />
                     <p>
