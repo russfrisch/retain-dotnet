@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <IsCompassProject>True</IsCompassProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.1\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Mvc">
+      <HintPath>..\packages\Elmah.MVC.2.1.1\lib\net40\Elmah.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="NewRelic.Api.Agent">
       <HintPath>..\packages\NewRelic.Azure.WebSites.2.23.2.0\lib\NewRelic.Api.Agent.dll</HintPath>
@@ -210,7 +217,7 @@
     <Content Include="sass\Site.scss">
       <Compile>True</Compile>
       <Minify>True</Minify>
-      <OutputFolder>..\Content</OutputFolder>
+      <OutputFolder>C:\Users\Russ\Dev\Retain\Retain\stylesheets</OutputFolder>
       <CompileStyle>Nested</CompileStyle>
       <DebugInfo>False</DebugInfo>
     </Content>
@@ -253,14 +260,33 @@
     <Content Include="sass\foundation\components\_accordion.scss" />
     <Content Include="sass\foundation\_settings.scss" />
     <Content Include="sass\foundation\_functions.scss" />
-    <Content Include="sass\_normalize.scss" />
-    <Content Include="sass\_foundation.scss" />
-    <Content Include="sass\_foundation.mvc.scss" />
+    <Content Include="sass\_normalize.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>C:\Users\Russ\Dev\Retain\Retain\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="sass\_foundation.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>C:\Users\Russ\Dev\Retain\Retain\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="sass\_foundation.mvc.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>C:\Users\Russ\Dev\Retain\Retain\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
     <Content Include="newrelic\newrelic.config" />
     <Content Include="newrelic\extensions\extension.xsd">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Scripts\app.coffee" />
+    <None Include="Properties\PublishProfiles\retain.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\app.js">
       <DependentUpon>app.coffee</DependentUpon>

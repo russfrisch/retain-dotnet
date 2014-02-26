@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Retain.Controllers
 {
+    [Authorize]
     public class NotesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
