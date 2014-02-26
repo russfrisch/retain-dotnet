@@ -11,7 +11,6 @@ namespace Retain.Migrations
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
-            ContextKey = "Retain.Models.ApplicationDbContext";
         }
 
         protected override void Seed(Retain.Models.ApplicationDbContext context)
